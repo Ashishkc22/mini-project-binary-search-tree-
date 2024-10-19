@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Binary Tree Traversal Visualizer</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./header.css" />
+    <script type="module" src="./script.js"></script>
+  </head>
+
+  <body>
+    <script type="module" src="./script.js"></script>
+
+   <!-- <div style="width:500px;height:431px;min-width: 500px"> -->
+    <svg width="600" height="400" viewBox="0 0 600 400" preserveAspectRatio="xMidYMin meet" xmlns="http://www.w3.org/2000/svg">
+      <!-- Define the path the circle will follow -->
+      <path id="myPath" d="M 150 130 L 187.5 290 L 225 210 L 300 50 L 450 130 L 487.5 290 L 525 210" stroke="black" stroke-width="2" fill="transparent" id="in-order-tree-animation-path"></path>
+  
+      <!-- Circle that will move along the path -->
+      <circle cx="150" cy="130" r="20" stroke="red" stroke-width="4" fill-opacity="0">
+          <!-- Move along the first segment -->
+          <animate attributeName="cx" from="150" to="187.5" begin="0s" dur="2s" fill="freeze" />
+          <animate attributeName="cy" from="130" to="290" begin="0s" dur="2s" fill="freeze" />
+          
+          <!-- Pause after the first segment -->
+          <!-- <animate attributeName="cx" from="187.5" to="187.5" begin="2s" dur="1s" fill="freeze" />
+          <animate attributeName="cy" from="290" to="290" begin="2s" dur="1s" fill="freeze" /> -->
+  
+          <!-- Move along the second segment -->
+          <animate attributeName="cx" from="187.5" to="225" begin="3s" dur="2s" fill="freeze" />
+          <animate attributeName="cy" from="290" to="210" begin="3s" dur="2s" fill="freeze" />
+  
+          <!-- Pause after the second segment -->
+          <!-- <animate attributeName="cx" from="225" to="225" begin="5s" dur="1s" fill="freeze" />
+          <animate attributeName="cy" from="210" to="210" begin="5s" dur="1s" fill="freeze" />
+   -->
+          <!-- Move along the third segment -->
+          <animate attributeName="cx" from="225" to="300" begin="6s" dur="2s" fill="freeze" />
+          <animate attributeName="cy" from="210" to="50" begin="6s" dur="2s" fill="freeze" />
+  
+          <!-- Pause after the third segment -->
+          <!-- <animate attributeName="cx" from="300" to="300" begin="8s" dur="1s" fill="freeze" />
+          <animate attributeName="cy" from="50" to="50" begin="8s" dur="1s" fill="freeze" /> -->
+  
+          <!-- Move along the fourth segment -->
+          <animate attributeName="cx" from="300" to="450" begin="9s" dur="2s" fill="freeze" />
+          <animate attributeName="cy" from="50" to="130" begin="9s" dur="2s" fill="freeze" />
+  
+          <!-- Pause after the fourth segment -->
+          <!-- <animate attributeName="cx" from="450" to="450" begin="11s" dur="1s" fill="freeze" />
+          <animate attributeName="cy" from="130" to="130" begin="11s" dur="1s" fill="freeze" /> -->
+  
+          <!-- Move along the fifth segment -->
+          <animate attributeName="cx" from="450" to="487.5" begin="12s" dur="2s" fill="freeze" />
+          <animate attributeName="cy" from="130" to="290" begin="12s" dur="2s" fill="freeze" />
+  
+          <!-- Pause after the fifth segment -->
+          <!-- <animate attributeName="cx" from="487.5" to="487.5" begin="14s" dur="1s" fill="freeze" />
+          <animate attributeName="cy" from="290" to="290" begin="14s" dur="1s" fill="freeze" /> -->
+  
+          <!-- Move along the last segment -->
+          <animate attributeName="cx" from="487.5" to="525" begin="15s" dur="2s" fill="freeze" />
+          <animate attributeName="cy" from="290" to="210" begin="15s" dur="2s" fill="freeze" />
+  
+          <!-- Pause after the last segment -->
+          <!-- <animate attributeName="cx" from="525" to="525" begin="17s" dur="1s" fill="freeze" />
+          <animate attributeName="cy" from="210" to="210" begin="17s" dur="1s" fill="freeze" /> -->
+  
+          <!-- Reset position and start again -->
+          <animate attributeName="cx" from="525" to="150" begin="18s" dur="2s" fill="freeze" />
+          <animate attributeName="cy" from="210" to="130" begin="18s" dur="2s" fill="freeze" />
+          
+          <!-- Restart the entire animation sequence -->
+          <!-- <animate attributeName="cx" from="150" to="150" begin="20s" dur="0s" fill="freeze" repeatCount="indefinite" />
+          <animate  attributeName="cy" from="130" to="130" begin="20s" dur="0s" fill="freeze" repeatCount="indefinite" /> -->
+      </circle>
+  </svg>
+  
+  </body>
+</html>

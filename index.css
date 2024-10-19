@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+
+* {
+    font-family: 'Caveat Brush', cursive;
+  }
+  svg {
+    width: 100%; /* Make the SVG take full width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 1000px; /* Optional: limit maximum width */
+    /* border: 1px solid #ccc; */
+    /* background-color: #f4f4f9; */
+}
+
+.c-button {
+  background-color: #ef823e; /* Green background */
+  border: none; /* No borders */
+  color: white; /* White text */
+  padding: 10px 22px; /* Padding */
+  text-align: center; /* Centered text */
+  text-decoration: none; /* No underline */
+  display: inline-block; /* Inline block */
+  font-size: 16px; /* Font size */
+  margin: 4px 2px; /* Margin */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  transition: background-color 0.3s, transform 0.3s; /* Transition effects */
+}
+
+.c-button:hover {
+  background-color: #f77727; /* Darker green on hover */
+  transform: translateY(-2px); /* Slightly raise the button */
+}
+
+.c-button:active {
+  background-color: #e7b867; /* Even darker green when clicked */
+  transform: translateY(0); /* Reset position */
+}
+
+.hover-effect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quick-nav {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24vh;
+  right: 0;
+  align-items: end;
+  top:38px
+}
+/* .nav-item{
+  background-color: #f77727;
+  padding: 5px 5px;
+  border-radius: 10px;
+  text-align: right;
+} */
+.nav-item {
+  width: fit-content;
+  background-color: #f77727; /* Maintain the vibrant orange */
+  padding: 5px 5px; /* Increased padding for better spacing */
+  border-radius: 12px; /* Slightly larger radius for smoother corners */
+  text-align: right;
+  color: #ffffff; /* White text for better contrast */
+  font-weight: bold; /* Make text bold for emphasis */
+  font-size: 16px; /* Adjust font size for readability */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow for depth */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover */
+  cursor: pointer; /* Change the cursor to pointer to indicate clickability */
+}
+
+.nav-item:hover {
+  background-color: #f55e0a; /* Darken background on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+
+.hidden {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+  transition: opacity 3s ease-in; /* Smooth transition */
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit
+}
+
+
+/* Apply styles to the scrollbar */
+::-webkit-scrollbar {
+  width: 5px; /* Width of the scrollbar */
+  height: 5px; /* Height of the scrollbar */
+}
+
+/* Track (the part of the scrollbar not covered by the handle) */
+::-webkit-scrollbar-track {
+  background: #f2eded; /* Color of the track */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Handle (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+  background: #c7c6c6; /* Color of the handle */
+  border-radius: 10px; /* Rounded corners */
+}
+
+
+.intro-screen {
+  display: flex; /* Use Flexbox for centering */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  height: calc(100vh - 20px); /* Full viewport height */
+  border: 2px solid white; /* White border */
+  border-radius: 10px; /* Rounded corners */
+ 
+  /* background: rgba(0, 0, 0, 0.7); */
+}
+
+.intro-h1 {
+  font-size: 2.5em; /* Large title */
+  margin-bottom: 10px; /* Space between title and subtitle */
+}
+
+.intro-h2 {
+  font-size: 1.5em; /* Smaller subtitle */
+}
+
+
+/* restart button */
+.restart-button {
+  background-color: #4CAF50; 
+  border: none; /* Remove default border */
+  color: white; /* White text */
+  padding: 5px 5px; /* Padding for the button */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Make it inline-block */
+  font-size: 10px; /* Text size */
+  margin-top: 20px; /* Add some margin on top */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.restart-button:hover {
+  background-color: #45a049; 
+  transform: scale(1.05); 
+}
+
+.restart-button:active {
+  background-color: #388e3c; 
+  transform: scale(0.98); 
+}
